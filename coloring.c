@@ -42,8 +42,8 @@ static float		get_diffuse(t_world *e, t_v3 light_pos, t_meshlist obj)
 	tshadow = intersect_shadow(e, obj.hit, light_vector);
 	if (hitangle < 0)
 		return (0);
-	// if (tshadow < (light_dist) && tshadow > ZERO)
-	//  	return (0);
+	if (tshadow < (light_dist) && tshadow > ZERO)
+		return (0);
 	return (obj.kd * hitangle);
 }
 
