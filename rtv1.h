@@ -19,7 +19,7 @@
 # include <math.h>
 # include <fcntl.h>
 # include <stdio.h>
-# include <mlx.h>
+# include "MinilibX/sierra/mlx.h"
 
 # define MAX(a,b) ((a < b) ? b : a)
 # define SQR(x) (x * x)
